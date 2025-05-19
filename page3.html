@@ -10,7 +10,7 @@
   <style>
     body {
       font-family: Gill Sans MT;
-      background: url('bg.png') center/cover no-repeat;
+      background-image: url('bg.jpg') center/cover no-repeat;
     }
     #logo {
       width: 50px; height: 50px;
@@ -74,6 +74,22 @@
       padding: 15px 0;
       width: 100%;
     }
+
+    .fade-in-title, .fade-in-text {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .fade-in-text {
+            animation-delay: 0.75s; 
+        }
+
+        @keyframes fadeIn {
+              to {
+                opacity: 1;
+            }
+        }
+    
     #icons { color: #fff; margin: 0 8px; }
   </style>
 </head>
@@ -103,8 +119,8 @@
 </nav>
 
 <main class="content-wrapper">
-  <h1 id="head1">MY ONLINE PORTFOLIO</h1>
-  <p class="mt-4 mb-4">
+  <h1 id="head1" class="fade-in-title">MY ONLINE PORTFOLIO</h1>
+  <p class="mt-4 mb-4 fade-in-text">
     This portfolio shows our ICT coding projects for each quarter for the 2024–2025 school year. Coding languages covered include HTML, CSS, Bootstrap, and JavaScript.
   </p>
 
