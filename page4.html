@@ -19,12 +19,25 @@
             background-color: #8c36f5; /* Background color on hover */
             border-radius: 30px;
         }
+
         body{
             font-family: Gill Sans MT;
         }
         #logo{
             width: 50px;
             height: 50px;
+        }
+        .col-md-6{
+            padding: 20px;
+            color: lightblue;
+            border-radius: 25px;
+           margin-top: 30px;
+          margin-bottom: 30px;
+              width: 50%;
+             margin-left: auto;
+              margin-right: auto;
+           text-align: center;
+           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
         li{
             font-weight: bolder;
@@ -48,22 +61,30 @@
             height: 265px;
             margin-left: 66px;
         }
+
         .info{
             margin-top: 130px;
             text-align: justify;
         }
         .row{
             column-gap: 1px;
+            font-family: candara;
+            background-image: linear-gradient(cyan, #7F00FF);
+            color: linear-gradient(#FFC0CB, #800080);
+
+        .col-md-6{
+            font-family:candara;        }
+
         }
         td, #text_thing{
             text-align: justify;
-            font-family: Candara ;
+            font-family: Candara;
         }
         #prof-sec{
             margin-left: 30px;
         }
         #quarter_info{
-            background-image: linear-gradient(to right, #43dbfa, #8c36f5) ;
+            background-image: linear-gradient(to right, purple, yellow) ;
             margin-bottom: 5px;
             padding-left: 20px;
             padding-right: 20px;
@@ -84,6 +105,7 @@
             background-color: #3f3c40;
             color: white;
           }
+        
          /* CSS for the animation */
         .fade-in {
           opacity: 0;
@@ -119,6 +141,8 @@
         .fade-in:nth-child(5) {
           animation-delay: 8s;
         }
+
+
     </style>
 </head>
 <body>
@@ -167,18 +191,19 @@
 
     <div class="row">
       <center>
-      <div  class="col-md-6" style="background-color: #8c36f5; color: white;" >
-        <script>  
-        document.write("<h2>Leave a Comment</h2>");
+      <div  class="col-md-6" style="background-image: linear-gradient(to right, #800080 , #e0b0ff);")>
+
+       <script>  
+        document.write("<h2>Give us a comment!</h2>");
         </script>
       </div>
       <div class="col-md-4" id="feedback" >
-        <p>We value your feedback. Talk to us.
+        <p>Your feedback is valuable to us to improve.
         <form action="Q4Project.html">
             
-            <label for="comment">Feedback<span style="color:red;">*</span></label>
+            <label for="comment">Your Feedback<span style="color:red;">*</span></label>
             <br>
-            <textarea style="width: 630px;" class="form-control" placeholder="Type here..." cols=50 rows=6 id="comment" required></textarea>
+            <textarea style="width: 630px;" class="form-control" placeholder="Type your feedback here..." cols=50 rows=6 id="comment" required></textarea>
             <br>
 
             <label for="name">Name<span style="color:red;">*</span></label>
@@ -190,7 +215,7 @@
             <input type="email" class="form-control" style="width: 630px;" id="email" required>
             <br>
 
-            <div class="col-md-8 bg-primary" style="color: white;" >
+            <div class="col-md-8 bg-primary" style="color: white; background-image: linear-gradient(to right, #800080 , #e0b0ff); border-radius: 25px;" >
                 <script>  
                 document.write("<h2>Rate Us</h2>");
                 </script>
@@ -236,7 +261,7 @@
             <br><br>
 
             <div class="d-grid">
-            <button type="submit" class="btn btn-info btn-block" onclick="message()">Submit Feedback</button>
+            <button type="submit" class="btn btn-info btn-block" style="border-radius: 25px; background-image: linear-gradient(to right, #800080 , #e0b0ff)"  onclick="message()">Submit Your Feedback</button>
             </div>
             
         </form>
@@ -254,7 +279,7 @@
         <a id = "icons" href="www.instagram.com" class="fa fa-instagram"></a>
       </p>
     <p>
-        <text style="font-family: Gill Sans MT; font-size: 20px;">OB Montessori Center Fairview Campus</text>
+        <text style="font-family: Gill Sans MT; font-size: 20px;">OB Montessori Center Sta. Ana Campus</text>
     </p>
    <hr>
     <p>&copy;Matig-a, Aclaro, Alwit, Woo</p>
@@ -276,9 +301,9 @@
 
     //use conditionals to check empty fields or display feedback
         if(name === "" || email === "" || comment === ""){
-            alert("Please complete the form");
+            alert("Please finish all sections of the form.");
         }else
-        alert("Thank you for rating us " + final_rate + ". We appreciate your feedback.");
+        alert("Thank you for giving us your valuable feedback." + final_rate + ". We very much appreciate your feedback.");
     }
 
 
