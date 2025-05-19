@@ -1,209 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="obmc logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--line 8 is for social media icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Our Portfolio: Projects Page</title>
-    <style>
-         .navbar-nav .nav-link {
-            transition: color 0.1s ease, background-color 0.3s ease, border-radius 0.8s ease;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="obmc logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Our Portfolio: Projects Page</title>
+  <style>
+    body {
+      font-family: Gill Sans MT;
+      background: url('professionalbg.avif') center/cover no-repeat;
     }
-        .navbar-nav .nav-link:hover {
-            color: #fff; /* Text color on hover */
-            background-color: #8c36f5; /* Background color on hover */
-            border-radius: 30px;
-        }
-        body{
-            font-family: Gill Sans MT;
-        }
-        #logo{
-            width: 50px;
-            height: 50px;
-        }
-        li{
-            font-weight: bolder;
-            color: #6833a1;
-        }
-        .footer {
-            position:fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-image: linear-gradient(to left, #43dbfa, #8c36f5);
-            color: white;
-            text-align: center;
-            line-height: 2px;
-        }
-        #icons{
-            color: white;
-        }
-        #profile{
-            width: 265px;
-            height: 265px;
-            margin-left: 66px;
-        }
-        .info{
-            margin-top: 130px;
-            text-align: justify;
-        }
-        .row{
-            column-gap: 1px;
-        }
-        td, #text_thing{
-            text-align: justify;
-            font-family: Candara ;
-        }
-        #prof-sec{
-            margin-left: 30px;
-        }
-        #quarter_info{
-            background-image: linear-gradient(to right, #43dbfa, #8c36f5) ;
-            margin-bottom: 5px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        #section1, #section2, #section3, #section4{
-            font-size: 30px;
-        }
-        #sample{
-            border-radius: 20px;
-        }
-        #feedback{
-            background-color: #d4d8d9;;
-            width: 952px;
-        }
-        #head1{
-            font-family: Rockwell;
-            font-size: 60px;
-            background-color: #3f3c40;
-            color: white;
-          }
-         /* CSS for the animation */
-        .fade-in {
-          opacity: 0;
-          animation: fadeIn 2s ease-in-out forwards;
-        }
-
-        @keyframes fadeIn {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-
-        /* Delay for each sentence to appear one after another */
-        .fade-in:nth-child(1) {
-          animation-delay: 0s;
-        }
-
-        .fade-in:nth-child(2) {
-          animation-delay: 2s;
-        }
-
-        .fade-in:nth-child(3) {
-          animation-delay: 4s;
-        }
-
-        .fade-in:nth-child(4) {
-          animation-delay: 6s;
-        }
-
-        .fade-in:nth-child(5) {
-          animation-delay: 8s;
-        }
-    </style>
+    #logo {
+      width: 50px; height: 50px;
+    }
+    .navbar-nav .nav-link {
+      transition: color .1s, background-color .3s, border-radius .8s;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #fff;
+      background: #8c36f5;
+      border-radius: 30px;
+    }
+    li.nav-item { font-weight: bold; color: #6833a1; }
+    #head1 {
+      font-family: Rockwell;
+      font-size: 48px;
+      background: #3f3c40;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .content-wrapper {
+      max-width: 700px;
+      margin: 150px auto 50px;
+      padding: 0 15px;
+      text-align: center;
+    }
+    #whats-next-container {
+      background: linear-gradient(to right, #43dbfa, #8c36f5);
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .image-area {
+      background: #fff;
+      padding: 8px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .image-area img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .quote-box {
+      background: rgba(255,255,255,0.2);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      text-align: left;
+      color: #fff;
+    }
+    .quote-pair {
+      margin-bottom: 20px;
+    }
+    .footer {
+      background: linear-gradient(to left, #43dbfa, #8c36f5);
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+    }
+    #icons { color: #fff; margin: 0 8px; }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md fixed-top" style="background-image: linear-gradient(to right, #43dbfa, #8c36f5);" id="nav1">
 
-<div class="container-fluid">
+<nav class="navbar navbar-expand-md fixed-top" style="background: linear-gradient(to right, #43dbfa, #8c36f5);">
+  <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
-        <!--logo from obmontessori.edu.ph-->
-    <img id="logo" src="obmc logo.png">
+      <img id="logo" src="obmc logo.png" alt="OBLogo">
     </a>
-
-    <div class="collapse navbar-collapse">
-    
-    <ul class="navbar-nav me-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="page2.html">Quarterly Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">What's Next</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="page4.html">Rate Us</a>
-      </li>
-    </ul>
-
-    <form class="d-flex" action="index.html">
-            <input class="form-control" type="text" placeholder="search…">
-            <button class="btn btn-primary" type="button">Search</button>
-    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="page2.html">Quarterly Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">What's Next</a></li>
+        <li class="nav-item"><a class="nav-link" href="page4.html">Rate Us</a></li>
+      </ul>
+      <form class="d-flex" action="index.html">
+        <input class="form-control me-2" type="search" placeholder="Search…">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
     </div>
-</div>
+  </div>
 </nav>
 
-<div class = "info">
-    <center>
-    <div class="col-md-6">
-        <span id="head1">MY ONLINE PORTFOLIO</span>
-          <br><br>
-          <h4>This portfolio shows our projects for each quarter for this school year 2024-2025. This covers the following programming languages: Basic HTML, Cascading Style Sheet, Bootstrap, and Javascript.</h4>  
-    </div>
-    </center>
-</div>
+<main class="content-wrapper">
+  <h1 id="head1">MY ONLINE PORTFOLIO</h1>
+  <p class="mt-4 mb-4">
+    This portfolio shows our ICT coding projects for each quarter for the 2024–2025 school year. Coding languages covered include HTML, CSS, Bootstrap, and JavaScript.
+  </p>
 
-<hr>
+  <div id="whats-next-container">
+    <h2>What’s Next?</h2>
 
-    <div class="row">
-        <center>
-            <div id="next" class="col-md-6" style="background-color: #8c36f5; color: white;" >
-                <script>  
-                document.write("<h2>What's Next?</h2>");
-                </script>
-            </div>
-            <div class="col-md-4" >
-            <p class="lead fade-in">Next school year, I expect to deepen my understanding of Python and its various applications.</p>
-            <p class="lead fade-in">I hope to learn more about advanced topics like object-oriented programming and how to use libraries effectively.</p>
-            <p class="lead fade-in">I want to be able to write more complex programs and solve real-world problems using Python.</p>
-            <p class="lead fade-in">I also expect to work on projects that challenge my skills and help me gain more hands-on experience.</p>
-            <p class="lead fade-in">Finally, I look forward to collaborating with my classmates to improve my coding abilities and learn from each other.</p>
+    <!-- Quote 1 -->
+    <div class="row quote-pair">
+      <div class="col-4">
+        <div class="image-area">
+          <img src="matiga.png" alt="CalebMatigA">
         </div>
-              <br>
-      <a href="#" id="sources">References:</a>
-        </center>
-
+      </div>
+      <div class="col-8">
+        <div class="quote-box">"I hope to be able to understand and continue to familiarize myself with coding and all the languages we learn. I hope I can learn and understand Python just as much as I can with HTML, Javascript, and CSS"</div>
+      </div>
     </div>
 
-<hr>
+    <!-- Quote 2 -->
+    <div class="row quote-pair">
+      <div class="col-4">
+        <div class="image-area">
+          <img src="alwit.png" alt="DavidAlwit">
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="quote-box">“I look forward to coding with Python on grade 10.”</div>
+      </div>
+    </div>
 
+    <!-- Quote 3 -->
+    <div class="row quote-pair">
+      <div class="col-4">
+        <div class="image-area">
+          <img src="aclaro.jpg" alt="TristanAclaro">
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="quote-box">“I want to learn more about coding, and I want to learn python next year.”</div>
+      </div>
+    </div>
 
-<br><br><br><br><br>
-<div class="footer">
-   <br>
-    <p>For any inquiries, feel free to contact us.
-        <a id = "icons" href="www.facebook.com" class="fa fa-facebook"></a>
-        <a id = "icons" href="www.instagram.com" class="fa fa-instagram"></a>
-      </p>
-    <p>
-        <text style="font-family: Gill Sans MT; font-size: 20px;">OB Montessori Center Fairview Campus</text>
-    </p>
-   <hr>
-    <p>&copy;Matig-a, Aclaro, Alwit, Woo</p>
-</div>
+    <!-- Quote 4 -->
+    <div class="row quote-pair">
+      <div class="col-4">
+        <div class="image-area">
+          <img src="chansungwoo.png" alt="ChanSungWoo">
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="quote-box">“I am passionate about learning new things, and especially excited with learning different types of coding and to excel in them.”</div>
+      </div>
+    </div>
 
+    <a href="#" id="sources">References:</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>
+    For any inquiries, feel free to contact us.
+    <a id="icons" href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a id="icons" href="https://www.instagram.com" class="fa fa-instagram"></a>
+  </p>
+  <p style="font-size: 18px; margin: 5px 0;">OB Montessori Center Sta. Ana Campus</p>
+  <hr style="border-color: rgba(255,255,255,0.3); margin: 10px 0;">
+  <p style="margin: 0;">&copy; Matig‑a, Aclaro, Alwit, Woo</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
